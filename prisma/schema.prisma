@@ -1,0 +1,65 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Topics {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  title String
+  image String
+}
+
+model SportQuestions {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  title         String
+  question      String
+  answers       String[]
+  correctAnswer String
+}
+
+model UshistoryQuestions {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  title         String
+  question      String
+  answers       String[]
+  correctAnswer String
+}
+
+model ScienceQuestions {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  title         String
+  question      String
+  answers       String[]
+  correctAnswer String
+}
+
+model HarryPotterQuestions {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  title         String
+  question      String
+  answers       String[]
+  correctAnswer String
+}
+
+model GeographyQuestions {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  title         String
+  question      String
+  answers       String[]
+  correctAnswer String
+}
+
+model MusicQuestions {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  title         String
+  question      String
+  answers       String[]
+  correctAnswer String
+}
