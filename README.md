@@ -13,7 +13,7 @@ Welcome to the README file for the Quiz App project. This project is built using
 + MongoDB database for storing quiz questions.
 
 
-# Technologies Used
+## Technologies Used
 + Next.js
 + Prisma ORM
 + MongoDB
@@ -35,14 +35,13 @@ Welcome to the README file for the Quiz App project. This project is built using
    ```bash
    npm install
 
-
 ### Running the App
 
-To start the Quiz App, run the following command:
-    ```bash
-    npm run dev
+1. To start the Quiz App, run the following command:
+   ```bash
+   npm install
 
-The app will be accessible at **http://localhost:3000**.
+2. The app will be accessible at http://localhost:3000.
 
 
 ## Usage
